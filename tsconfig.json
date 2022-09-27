@@ -7,13 +7,19 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "outDir": "dist",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "~Components/*": [
+        "./src/renderer/components/*"
+      ],
+      "*": ["node_modules/*"],
+      "~Common/*": ["./src/common/*"],
     }
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }
